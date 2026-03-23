@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sem Love Ching</title>
+</head>
+
+<body style="font-family: Arial; text-align: center; background: #111; color: #fff;">
+
+<h1>😏 Click if you're ready...</h1>
+
+<button onclick="showMessages()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+    Click Me 😆
+</button>
+
+<br><br>
+
+<pre id="output" style="font-size: 18px; color: #0f0;"></pre>
+
+<script>
+function showMessages() {
+    let text = "";
+
+    for (let i = 1; i <= 100; i++) {
+        text += i + ". sem love ching\n";
+    }
+
+    document.getElementById("output").textContent = text;
+}
+</script>
+
+</body>
+</html>
