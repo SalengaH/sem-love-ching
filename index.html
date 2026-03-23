@@ -26,6 +26,16 @@ function showMessages() {
 
     document.getElementById("output").textContent = text;
 }
+
+    function showMessages() {
+    let i = 1;
+    let interval = setInterval(() => {
+        document.getElementById("output").textContent += i + ". sem love ching\n";
+        i++;
+
+        if (i > 100) clearInterval(interval);
+    }, 50);
+}
 </script>
 
 </body>
